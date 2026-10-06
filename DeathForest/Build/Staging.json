@@ -1,0 +1,15 @@
+{
+"companyName": "Dreamer",
+"productName": "TheDeathForest",
+"productVersion": "1.03",
+"dataUrl": "Staging.data.unityweb",
+"wasmCodeUrl": "Staging.wasm.code.unityweb",
+"wasmFrameworkUrl": "Staging.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.17f1"
+}

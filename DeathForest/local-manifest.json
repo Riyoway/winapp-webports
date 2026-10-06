@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "Build/Staging.data.unityweb",
+      "size": 28909759,
+      "sha256": "b707da1d6599da1620a6ea44139df60b5b13759993856613c573d38efdc6020c"
+    },
+    {
+      "path": "Build/Staging.json",
+      "size": 455,
+      "sha256": "2590d372a5ef7618cf1ba73a6763546d871f0b8416188afa9e726ef7923f4c05"
+    },
+    {
+      "path": "Build/Staging.wasm.code.unityweb",
+      "size": 15589106,
+      "sha256": "3a5e942ae178285477ec4a877cd1e2b24f135e62a312ca376cd25c3bd02caee1"
+    },
+    {
+      "path": "Build/Staging.wasm.framework.unityweb",
+      "size": 458239,
+      "sha256": "7180a40dfd05641e2e4b6d21691e15ba38ae661557ebc8c3a10330ad60953a5d"
+    },
+    {
+      "path": "Build/UnityLoader.js",
+      "size": 159436,
+      "sha256": "832dda725022a8f51703b96b182277e9cb7b5345bcd236d21f31007c6edb6fc1"
+    },
+    {
+      "path": "index.html",
+      "size": 3812,
+      "sha256": "a65b945de06925f8de2ea525ddaf7d2049e8635f11735f0f661a94e8c9703474"
+    },
+    {
+      "path": "README.md",
+      "size": 5442,
+      "sha256": "f1b20349180b3184952192d63f9c91f2dec11db1e564642876e3b69c809da56f"
+    }
+  ],
+  "total_bytes": 45126249
+}

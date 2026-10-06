@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DeathForest</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#000; }
+    #game,#game canvas { position:fixed!important; inset:0!important; width:100%!important; height:100%!important; outline:none; }
+    #loading { position:fixed; inset:0; z-index:10; background:#000; }
+    #loading::before,#loading i { position:absolute; left:50%; top:50%; width:240px; height:3px; margin:-1px 0 0 -120px; background:#ffffff26; }
+    #loading::before { content:""; }
+    #loading i { width:0; background:#fff; transition:width .2s; }
+    #loading p { position:absolute; top:calc(50% + 16px); width:100%; margin:0; color:#888; font:13px monospace; text-align:center; }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="loading"><i></i></div>
+  <script>
+    const loading = document.getElementById('loading');
+    function showError(error) {
+      console.error(error);
+      const message = loading.querySelector('p') || document.createElement('p');
+      message.textContent = 'Error: ' + (error && error.message || error);
+      loading.appendChild(message);
+      loading.style.display = '';
+    }
+    const requestPointerLock = Element.prototype.requestPointerLock;
+    if (requestPointerLock) Element.prototype.requestPointerLock = function(...args) {
+      const pending = requestPointerLock.apply(this, args);
+      // Unity 2019 uses the event-based API; browsers also return a promise now.
+      if (pending && pending.catch) pending.catch(() => {});
+    };
+    document.addEventListener('game-quit', () => {
+      document.getElementById('game').style.display = 'none';
+    });
+    window.addEventListener('error', event => showError(event.message));
+    window.addEventListener('unhandledrejection', event => showError(event.reason));
+    // Older Unity audio needs an explicit resume inside a browser user gesture.
+    const gameAudioContexts = new Set();
+    for (const key of ['AudioContext', 'webkitAudioContext']) {
+      const NativeContext = window[key];
+      if (!NativeContext) continue;
+      window[key] = new Proxy(NativeContext, {
+        construct(Type, args) {
+          const context = Reflect.construct(Type, args);
+          gameAudioContexts.add(context);
+          return context;
+        }
+      });
+    }
+    function resumeGameAudio() {
+      for (const context of gameAudioContexts) {
+        if (context.state === 'suspended') context.resume().catch(() => {});
+      }
+    }
+    window.addEventListener('pointerdown', resumeGameAudio, { capture: true });
+    window.addEventListener('keydown', resumeGameAudio, { capture: true });
+    const script = document.createElement('script');
+    script.src = 'Build/UnityLoader.js';
+    script.onerror = () => showError('Unity loader could not be loaded.');
+    script.onload = () => {
+      UnityLoader.Error.handler = event => showError(event.message || event);
+      window.unityInstance = UnityLoader.instantiate('game', 'Build/Staging.json', {
+        onerror: showError,
+        compatibilityCheck(instance, success, failure) {
+          if (UnityLoader.SystemInfo.hasWebGL) success();
+          else { showError('WebGL is not supported.'); failure(); }
+        },
+        onProgress(instance, progress) {
+          loading.querySelector('i').style.width = 240 * Math.min(1, progress) + 'px';
+          if (progress === 1) loading.style.display = 'none';
+        },
+        Module: { onAbort: showError, autoSyncPersistentDataPath: true }
+      });
+    };
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>

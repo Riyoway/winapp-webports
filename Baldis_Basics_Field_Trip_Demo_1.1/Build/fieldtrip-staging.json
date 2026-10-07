@@ -1,0 +1,15 @@
+{
+"companyName": "Basically, Games!",
+"productName": "Baldi's Basics Field Trip Demo 1.1",
+"productVersion": "1.1",
+"dataUrl": "fieldtrip-staging.data.unityweb",
+"wasmCodeUrl": "fieldtrip-staging.wasm.code.unityweb",
+"wasmFrameworkUrl": "fieldtrip-staging.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.17f1"
+}

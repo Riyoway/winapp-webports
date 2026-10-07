@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+<title>Baldi's Basics Challenges Demo 1.1</title><link rel="icon" href="data:,">
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+#game,#game canvas{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;outline:none}
+#loading{position:fixed;inset:0;z-index:10;background:#000}
+#loading::before,#loading i{position:absolute;left:50%;top:50%;width:240px;height:3px;margin:-1px 0 0 -120px;background:#ffffff26}
+#loading::before{content:""}#loading i{width:0;background:#fff}
+#loading p{position:absolute;top:calc(50% + 16px);width:100%;margin:0;color:#888;font:13px monospace;text-align:center}
+</style></head><body>
+<div id="game"></div><div id="loading"><i></i></div>
+<script>
+const loading=document.getElementById('loading');
+let runtimeStopped=false;
+const pendingTimers=new Set(),pendingFrames=new Set(),pendingIntervals=new Set();
+const nativeTimeout=window.setTimeout.bind(window),nativeClearTimeout=window.clearTimeout.bind(window);
+const nativeInterval=window.setInterval.bind(window),nativeClearInterval=window.clearInterval.bind(window);
+const nativeFrame=window.requestAnimationFrame.bind(window),nativeCancelFrame=window.cancelAnimationFrame.bind(window);
+window.setTimeout=function(callback,delay,...args){
+ if(runtimeStopped)return 0;
+ let id;
+ const run=typeof callback==='function'?function(...values){pendingTimers.delete(id);if(!runtimeStopped)callback.apply(window,values);}:callback;
+ id=nativeTimeout(run,delay,...args);pendingTimers.add(id);return id;
+};
+window.clearTimeout=function(id){pendingTimers.delete(id);nativeClearTimeout(id);};
+window.setInterval=function(callback,delay,...args){if(runtimeStopped)return 0;const id=nativeInterval(callback,delay,...args);pendingIntervals.add(id);return id;};
+window.clearInterval=function(id){pendingIntervals.delete(id);nativeClearInterval(id);};
+window.requestAnimationFrame=function(callback){if(runtimeStopped)return 0;let id;id=nativeFrame(time=>{pendingFrames.delete(id);if(!runtimeStopped)callback.call(window,time);});pendingFrames.add(id);return id;};
+window.cancelAnimationFrame=function(id){pendingFrames.delete(id);nativeCancelFrame(id);};
+function stopRuntime(){
+ runtimeStopped=true;
+ pendingTimers.forEach(nativeClearTimeout);pendingTimers.clear();
+ pendingIntervals.forEach(nativeClearInterval);pendingIntervals.clear();
+ pendingFrames.forEach(nativeCancelFrame);pendingFrames.clear();
+ nativeTimeout(()=>{
+  window.setTimeout=nativeTimeout;window.clearTimeout=nativeClearTimeout;
+  window.setInterval=nativeInterval;window.clearInterval=nativeClearInterval;
+  window.requestAnimationFrame=nativeFrame;window.cancelAnimationFrame=nativeCancelFrame;
+  document.getElementById('game').style.visibility='hidden';
+ },0);
+}
+
+function showError(error){console.error(error);const message=loading.querySelector('p')||document.createElement('p');message.textContent='Error: '+(error&&error.message||error);loading.appendChild(message);loading.style.display='';}
+const requestPointerLock=Element.prototype.requestPointerLock;
+let pointerLockTarget=null;
+if(requestPointerLock)Element.prototype.requestPointerLock=function(...args){pointerLockTarget=this;const pending=requestPointerLock.apply(this,args);if(pending&&pending.catch)pending.catch(()=>{});};
+const exitPointerLock=document.exitPointerLock;
+if(exitPointerLock)document.exitPointerLock=function(...args){pointerLockTarget=null;return exitPointerLock.apply(this,args);};
+document.addEventListener('mousedown',event=>{if(event.target===pointerLockTarget&&!document.pointerLockElement)pointerLockTarget.requestPointerLock();});
+document.addEventListener('game-quit',stopRuntime);
+window.addEventListener('error',event=>showError(event.message));
+window.addEventListener('unhandledrejection',event=>showError(event.reason));
+const script=document.createElement('script');script.src='Build/UnityLoader.js';script.onerror=()=>showError('Unity loader could not be loaded.');
+script.onload=()=>{UnityLoader.Error.handler=event=>showError(event.message||event);window.unityInstance=UnityLoader.instantiate('game','Build/challenges-staging.json',{
+ onerror:showError,
+ compatibilityCheck(instance,success,failure){if(UnityLoader.SystemInfo.hasWebGL)success();else{showError('WebGL is not supported.');failure();}},
+ onProgress(instance,progress){loading.querySelector('i').style.width=240*Math.min(1,progress)+'px';if(progress===1)loading.style.display='none';},
+ Module:{onAbort:showError,autoSyncPersistentDataPath:true}
+});};document.body.appendChild(script);
+</script></body></html>

@@ -294,11 +294,6 @@
       "sha256": "e0d89b02b74c324111131ad0dd3037c77e79180341b38cf2c20c99776db4f849"
     },
     {
-      "path": "README.md",
-      "size": 3783,
-      "sha256": "d75a5448def960d3242c95d49d8d5e46998cbe5b4018d23577d355962597d9f2"
-    },
-    {
       "path": "start.bat",
       "size": 333,
       "sha256": "b22a1c55744e9eae10bb6eb930e1b873f1955552d11a9c18fa0bc19ea48cf989"
@@ -314,5 +309,5 @@
       "sha256": "6d76bd45202c0a5831679474335f9c48f6e33e5c66630b3bb39712e35464bb74"
     }
   ],
-  "total_bytes": 54558396
+  "total_bytes": 54554613
 }

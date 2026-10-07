@@ -6,12 +6,12 @@ A collection of browser ports and restorations of Windows games, packaged with l
 
 | Game | Files | Notes |
 | --- | --- | --- |
-| Baldi's Basics Challenges Demo 1.1 | [Open game folder](./Baldis_Basics_Challenges_Demo_1.1/) · [Details](./Baldis_Basics_Challenges_Demo_1.1/README.md) | Unity WebGL restoration featuring the Grappling, Speedy, and Stealthy challenges. |
-| Baldi's Basics Field Trip Demo 1.1 | [Open game folder](./Baldis_Basics_Field_Trip_Demo_1.1/) · [Details](./Baldis_Basics_Field_Trip_Demo_1.1/README.md) | Unity WebGL restoration of the school and camping demo. |
+| Baldi's Basics Challenges Demo 1.1 | [Open game folder](./Baldis_Basics_Challenges_Demo_1.1/) | Unity WebGL restoration featuring the Grappling, Speedy, and Stealthy challenges. |
+| Baldi's Basics Field Trip Demo 1.1 | [Open game folder](./Baldis_Basics_Field_Trip_Demo_1.1/) | Unity WebGL restoration of the school and camping demo. |
 | Baldi's Basics Gangnam Style Takeover | [Open game folder](./Baldis_Basics_Gangnam_Style_Takeover/) | Unity WebGL build based on Baldi's Basics Classic. |
-| Buzz Lightyear Horror Game | [Open game folder](./Buzz_Lightyear_Horror_Game/) · [Details](./Buzz_Lightyear_Horror_Game/README.md) | Browser restoration of the Windows release by NA Games, built with Unity 2020.1.0f1. |
-| DeathForest | [Open game folder](./DeathForest/) · [Details](./DeathForest/README.md) | Browser restoration of DeathForest: Escape from the Forest [Proliferation] v1.03 by Kazz. Requires WebGL 2. |
-| Mario.EXE | [Open game folder](./Mario.exe/) · [Details](./Mario.exe/README.md) | Browser reconstruction of CoolRash's 2015 GameMaker game using recovered resources and game logic. |
+| Buzz Lightyear Horror Game | [Open game folder](./Buzz_Lightyear_Horror_Game/) | Browser restoration of the Windows release by NA Games, built with Unity 2020.1.0f1. |
+| DeathForest | [Open game folder](./DeathForest/) | Browser restoration of DeathForest: Escape from the Forest [Proliferation] v1.03 by Kazz. Requires WebGL 2. |
+| Mario.EXE | [Open game folder](./Mario.exe/) | Browser reconstruction of CoolRash's 2015 GameMaker game using recovered resources and game logic. |
 
 ## Running the Games
 

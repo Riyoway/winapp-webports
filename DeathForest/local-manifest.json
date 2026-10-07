@@ -29,12 +29,7 @@
       "path": "index.html",
       "size": 3812,
       "sha256": "a65b945de06925f8de2ea525ddaf7d2049e8635f11735f0f661a94e8c9703474"
-    },
-    {
-      "path": "README.md",
-      "size": 5442,
-      "sha256": "f1b20349180b3184952192d63f9c91f2dec11db1e564642876e3b69c809da56f"
     }
   ],
-  "total_bytes": 45126249
+  "total_bytes": 45120807
 }

@@ -31,15 +31,10 @@
       "sha256": "855825c368e58714d1b66ca4735525e58249e154c8178818be211463721bb855"
     },
     {
-      "path": "README.md",
-      "size": 4541,
-      "sha256": "3239364b2fba94f291f9312cdb3e0904ae3721bbd76ede606d0e5b287853b119"
-    },
-    {
       "path": "StreamingAssets/buzz-death.mp4",
       "size": 166833,
       "sha256": "2c1106316307a5b63937851e63e69f6789596736182192f5566178495ac5050a"
     }
   ],
-  "total_bytes": 150859656
+  "total_bytes": 150855115
 }

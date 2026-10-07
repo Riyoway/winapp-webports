@@ -1,0 +1,318 @@
+{
+  "game": "Mario.EXE",
+  "runtime": "Canvas 2D / Web Audio",
+  "source_sha256": "dd95deed20e62e9fd3b9af8143d6800ca68a13b09d98c7988c847d98528a6337",
+  "files": [
+    {
+      "path": "assets/audio-0.wav",
+      "size": 95896,
+      "sha256": "6c4fa519c8bdff1e127ee6f77d64df50b8a02ba5baf98233a745724a19b4efa4"
+    },
+    {
+      "path": "assets/audio-1.ogg",
+      "size": 3493,
+      "sha256": "d8a3bab2efd0463d7b0a15a09f0fc9966a4dd2ebca26a61a34088af47ac5bb1c"
+    },
+    {
+      "path": "assets/audio-10.ogg",
+      "size": 644653,
+      "sha256": "eded302af4ab754736691fa4aa19ef025f709296206af453390b8fdc4e29f274"
+    },
+    {
+      "path": "assets/audio-11.ogg",
+      "size": 250502,
+      "sha256": "c293e4d6b7cef3ecd8103bafa319028e4844d95569fda00a58535f98cb8bd56a"
+    },
+    {
+      "path": "assets/audio-12.ogg",
+      "size": 427176,
+      "sha256": "5a965d2e50662a1776e8dbda32ecce7abab70f8f2996a19540f8963cd45b19f7"
+    },
+    {
+      "path": "assets/audio-13.ogg",
+      "size": 448375,
+      "sha256": "04152abc8c6f8aeca76944b914c6a8b10f3606c4f5d037bcedb0c8bacdfdf09c"
+    },
+    {
+      "path": "assets/audio-14.ogg",
+      "size": 393417,
+      "sha256": "948688b1d746d9e650c78340b057b16dfa27dcfe3f5cb3dafed4bd8ad3e8ed0f"
+    },
+    {
+      "path": "assets/audio-15.wav",
+      "size": 907942,
+      "sha256": "054c2030557e45241ebdcea8c01d81b8b0a8fe3941e37a8cf94bc7276dce7248"
+    },
+    {
+      "path": "assets/audio-16.wav",
+      "size": 350106,
+      "sha256": "85dedecb79340f8b61f559eb060f7a8e5884ce4a9eb7e3d729bcf9fc0cbbfab2"
+    },
+    {
+      "path": "assets/audio-17.wav",
+      "size": 263776,
+      "sha256": "68069e13a40eb44fb1ad87d9d88c09df4c573423ca9ecf6070f9447926eadcbc"
+    },
+    {
+      "path": "assets/audio-18.wav",
+      "size": 106272,
+      "sha256": "8efd54ad8d41fd863635506222d076c69addf79e163a27e55b33632d5f47270e"
+    },
+    {
+      "path": "assets/audio-19.wav",
+      "size": 59916,
+      "sha256": "55ee70ac17ec03f0e65740827f6730f40efc5802b3c6421eb22ced2209e8a240"
+    },
+    {
+      "path": "assets/audio-2.ogg",
+      "size": 11915,
+      "sha256": "8edd16f3037f20a0f5c90e3d334958c1fc57c3ab305cbcb451dcb6ac959340b5"
+    },
+    {
+      "path": "assets/audio-20.wav",
+      "size": 255720,
+      "sha256": "fe539531ad5c805060109bbbd55cdb10d308e805d215f59b5a68e3f7630a9886"
+    },
+    {
+      "path": "assets/audio-21.wav",
+      "size": 284554,
+      "sha256": "cc499a677cea90bbc32b3551e6e5a713137e1466507c54b62e2aa888d04a2292"
+    },
+    {
+      "path": "assets/audio-22.wav",
+      "size": 227732,
+      "sha256": "eb628d89647149ade6d1f1c7be2f1c613c03ca640ce5ebf1c2803fe748030eba"
+    },
+    {
+      "path": "assets/audio-23.wav",
+      "size": 445688,
+      "sha256": "34b11014d4f7cb075f2421638476797cf1a5a8a21c1b35214cf47f9d6d1d88b0"
+    },
+    {
+      "path": "assets/audio-24.wav",
+      "size": 381658,
+      "sha256": "f72559e7710ccea28e2addb3af3992dbdb15b5509964f3abc14683f207a41c6d"
+    },
+    {
+      "path": "assets/audio-25.ogg",
+      "size": 8653,
+      "sha256": "e272ea865f13748bf98c7c563c1cb626d864d9ebe6fe97c4ecbb7f8df37cd6b6"
+    },
+    {
+      "path": "assets/audio-26.wav",
+      "size": 164550,
+      "sha256": "1973b89fd28bfa8a34abadf14e861bf1364655821a58c7dfaa4c6dcfb3a8bf6e"
+    },
+    {
+      "path": "assets/audio-27.ogg",
+      "size": 751670,
+      "sha256": "c0b08e69ddc97a39a544a2a801d79d3b669dba55b7a69a4f598609adb1bdc8a7"
+    },
+    {
+      "path": "assets/audio-28.ogg",
+      "size": 22668,
+      "sha256": "257aa73f16fdbf7dba32ced91ec693f7a257ed8ed5318ca589911673723a7662"
+    },
+    {
+      "path": "assets/audio-29.wav",
+      "size": 219252,
+      "sha256": "4147df8d0dbd15b25cb18694af0fbf373771f8a260b624f1bf657bbd2f1f4838"
+    },
+    {
+      "path": "assets/audio-3.ogg",
+      "size": 33029,
+      "sha256": "9ad9f7bfa065ed94e2c40e28664a52c93aa42c1497450280b08e79cbfc3dece5"
+    },
+    {
+      "path": "assets/audio-30.wav",
+      "size": 244270,
+      "sha256": "97b3fd767a32eb2bf7fb20c64c4b8928eebea4c1aabfe0c55b0451f85c18a0bb"
+    },
+    {
+      "path": "assets/audio-31.wav",
+      "size": 485972,
+      "sha256": "218a3234d9a833a546acbb90f8c8950c0dd42987eb4887ae3d63c9df6454db31"
+    },
+    {
+      "path": "assets/audio-32.ogg",
+      "size": 1183726,
+      "sha256": "3f41ab9a8bffab2712d8691d9ec4bb45cf04cd633cac97cc25c6fba00564b36f"
+    },
+    {
+      "path": "assets/audio-33.ogg",
+      "size": 224249,
+      "sha256": "03160a801eb978f59cea7172bfa4d485f53706e2f1b45d0ca0d24c8bf53532ac"
+    },
+    {
+      "path": "assets/audio-34.wav",
+      "size": 29976,
+      "sha256": "73003bfdf319f09f1113858a88615cb9c765c37317dc14cc56aeebb67b0638ba"
+    },
+    {
+      "path": "assets/audio-4.ogg",
+      "size": 454592,
+      "sha256": "23ad92ed07e610b44c4dff2e6d4a050190d5ba0694651d6b01dee2501334bcb8"
+    },
+    {
+      "path": "assets/audio-5.wav",
+      "size": 589868,
+      "sha256": "0631bd0fb7062cbbd43681689e6cfa242a4f6f7ce2293544e046ee2b8cfc0d4e"
+    },
+    {
+      "path": "assets/audio-6.ogg",
+      "size": 7142,
+      "sha256": "a6a8f41971369ab39af590d59667900541f08a0f04e011dcb941e169488e8715"
+    },
+    {
+      "path": "assets/audio-7.ogg",
+      "size": 32626,
+      "sha256": "48d5b68a0d6b30d2e9a0c1779905f567e9712b09d772c6e83cd8a45c96f568e8"
+    },
+    {
+      "path": "assets/audio-8.ogg",
+      "size": 44278,
+      "sha256": "7aec98a3bde9f8a8b7bdae9382e0dd614896ae63bd1a9ae0c2da4cd14c3d6d40"
+    },
+    {
+      "path": "assets/audio-9.ogg",
+      "size": 334957,
+      "sha256": "c70d55de3d25b0ebbfe721ece75785d444d1dd5d3196d6d4f324b01509352abf"
+    },
+    {
+      "path": "assets/texture-0.png",
+      "size": 933011,
+      "sha256": "8450f4d53356241561cd2ed5fdf957c31fd47fb51d53995c0217d05e540ae1e4"
+    },
+    {
+      "path": "assets/texture-1.png",
+      "size": 1143245,
+      "sha256": "a78c50b41d072d1e67e1a085225489d703f96c906797040091b78970b4009a45"
+    },
+    {
+      "path": "assets/texture-10.png",
+      "size": 141201,
+      "sha256": "18978532410ab777ed3b732bdac5e562a0df9fc9a32f605bc7a9733fd1f46c99"
+    },
+    {
+      "path": "assets/texture-11.png",
+      "size": 3614621,
+      "sha256": "1b5094551318cfcb45fa9da00c78c1a23c9140ba0cbf4e61474e3b0fb0c78407"
+    },
+    {
+      "path": "assets/texture-12.png",
+      "size": 3494095,
+      "sha256": "3defc49f4d6e09900f2c83a003fb46a8cc379d22305eafbf3875ea255cdf62e9"
+    },
+    {
+      "path": "assets/texture-13.png",
+      "size": 3692342,
+      "sha256": "37976c2593312405b36399486f4512516d86e94a1a5bfdb84b18238eec18dd04"
+    },
+    {
+      "path": "assets/texture-14.png",
+      "size": 3572818,
+      "sha256": "817df6635896bbf623319ce4e327038a3afcd7f03314fd937f1465f53ea88188"
+    },
+    {
+      "path": "assets/texture-15.png",
+      "size": 3725876,
+      "sha256": "d3a482b1ef8ebda004bf08ef697e2ca3ea84ed929287eeef32ea8fbebb02e2d9"
+    },
+    {
+      "path": "assets/texture-16.png",
+      "size": 3536571,
+      "sha256": "edd38a0966117d4815af1b51f4bb723c032fc81800665aa79bace444c0823ec4"
+    },
+    {
+      "path": "assets/texture-17.png",
+      "size": 3591676,
+      "sha256": "a982893756cac11725e73d6687751fa9f4db2a755c2f56f1fc172c63a23e4d7f"
+    },
+    {
+      "path": "assets/texture-18.png",
+      "size": 1794840,
+      "sha256": "7eb5c9a693e5ddbb3dcd0cb9fec9958b1438a36088d6a52d745c6301631bdb0e"
+    },
+    {
+      "path": "assets/texture-2.png",
+      "size": 854366,
+      "sha256": "9bf11362c81b226a65506ca0c42d242f474249a7a990aac4128a9a724d34faa8"
+    },
+    {
+      "path": "assets/texture-3.png",
+      "size": 876772,
+      "sha256": "bf877de7387ae7a657f59ad6ce50ef08b03a2306b59514f841e75cdfdf678b20"
+    },
+    {
+      "path": "assets/texture-4.png",
+      "size": 2147217,
+      "sha256": "484ebacd34c1fdd627a1d9a901b6fe90028da7377f0b6a8ccd167ad4309c2f17"
+    },
+    {
+      "path": "assets/texture-5.png",
+      "size": 2145115,
+      "sha256": "5a0e8ddf2b44c50eea681fc5622139766a156543c59aba04a4f735b465764361"
+    },
+    {
+      "path": "assets/texture-6.png",
+      "size": 925891,
+      "sha256": "8363a674f1befeb38d9ce88d6c6abeb96572268f1b6f1edd59961be624cafa45"
+    },
+    {
+      "path": "assets/texture-7.png",
+      "size": 4191659,
+      "sha256": "1a7a2594631a5f9f129c9ac26983fac9ac62adcc6946931ca257f8004db58dec"
+    },
+    {
+      "path": "assets/texture-8.png",
+      "size": 675749,
+      "sha256": "248581295a2c958f462538994d88f178d17b5421c4644b3a6b6bedb0fd4e925d"
+    },
+    {
+      "path": "assets/texture-9.png",
+      "size": 125013,
+      "sha256": "9d5fadeaa039cbdeab31df2dcf982c59c4ede14e9a0f5c7debea91b4fe0e2109"
+    },
+    {
+      "path": "events.js",
+      "size": 50036,
+      "sha256": "daf5317e9fc94157dab677c914618270c22e8b719fc72d551e2e935e90052b7b"
+    },
+    {
+      "path": "game.js",
+      "size": 33433,
+      "sha256": "eea68e91767ced5ebba2fd8115f11fc80f67c9649730f54b36c61f5e3f24d1f5"
+    },
+    {
+      "path": "game.json",
+      "size": 2896154,
+      "sha256": "c13337c3b4318f76c2b156971cb6b988bbde3b9b4942c6886fa7af8ffedb4523"
+    },
+    {
+      "path": "index.html",
+      "size": 754,
+      "sha256": "e0d89b02b74c324111131ad0dd3037c77e79180341b38cf2c20c99776db4f849"
+    },
+    {
+      "path": "README.md",
+      "size": 3783,
+      "sha256": "d75a5448def960d3242c95d49d8d5e46998cbe5b4018d23577d355962597d9f2"
+    },
+    {
+      "path": "start.bat",
+      "size": 333,
+      "sha256": "b22a1c55744e9eae10bb6eb930e1b873f1955552d11a9c18fa0bc19ea48cf989"
+    },
+    {
+      "path": "start_server.py",
+      "size": 1024,
+      "sha256": "2f47f7f0f96349bdb7229d99f0732753fbc5bc883c2a9fa44391199bfd1bdad5"
+    },
+    {
+      "path": "style.css",
+      "size": 532,
+      "sha256": "6d76bd45202c0a5831679474335f9c48f6e33e5c66630b3bb39712e35464bb74"
+    }
+  ],
+  "total_bytes": 54558396
+}

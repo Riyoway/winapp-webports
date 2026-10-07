@@ -1,0 +1,61 @@
+{
+  "game": "Baldi's Basics Challenges Demo_1.1",
+  "files": [
+    {
+      "path": "Build/challenges-staging.data.unityweb",
+      "size": 17269272,
+      "sha256": "29d31eba832c98c79947ad0636c4aa6dda40177bd00bc56082811aeb7778db10"
+    },
+    {
+      "path": "Build/challenges-staging.json",
+      "size": 527,
+      "sha256": "995a729c49884b16988adb0c67c943528481c160129357dc49baaa26314aca1d"
+    },
+    {
+      "path": "Build/challenges-staging.wasm.code.unityweb",
+      "size": 10218204,
+      "sha256": "c9a6bbe9886cfe13fb2bdf369ac1a139356e8482698e84380c6209c559a92811"
+    },
+    {
+      "path": "Build/challenges-staging.wasm.framework.unityweb",
+      "size": 89018,
+      "sha256": "f2e6d06e808ecce3591cf5194745ed4bb44115c6f1db40ac4262bc8ba805c3a1"
+    },
+    {
+      "path": "Build/UnityLoader.js",
+      "size": 159436,
+      "sha256": "832dda725022a8f51703b96b182277e9cb7b5345bcd236d21f31007c6edb6fc1"
+    },
+    {
+      "path": "index.html",
+      "size": 4977,
+      "sha256": "b2c01867acfd9b4609431530c05c0548c28bd87648c8f93d020b1900ae08afec"
+    },
+    {
+      "path": "README.md",
+      "size": 4552,
+      "sha256": "470e189723bc1379fd3f4397d5525ce80fbe6ef2cffb2b57891e1ad24928c992"
+    },
+    {
+      "path": "start.bat",
+      "size": 271,
+      "sha256": "adf8c9b28a64b4c61303c045abe4891ee7ab0383bec72a3f9bb6564bb2304cce"
+    },
+    {
+      "path": "start_server.py",
+      "size": 953,
+      "sha256": "033e2f5c7dc95dec193026bf4edaf1c864effc8e97b586aaa6f63aced731026f"
+    },
+    {
+      "path": "StreamingAssets/Subtitles_En.json",
+      "size": 2785,
+      "sha256": "5655298e2be8cf07fc8dd198cef3ae97d23c54aa3fd9fd97fe028b6651cfac37"
+    },
+    {
+      "path": "StreamingAssets/Subtitles_Fr.json",
+      "size": 426,
+      "sha256": "361035d6db175ae69e217e570766512aa446dcad6fdfabda897d7e272a9275a8"
+    }
+  ],
+  "total_bytes": 27750421
+}

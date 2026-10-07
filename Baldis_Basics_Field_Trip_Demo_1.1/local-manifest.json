@@ -1,0 +1,51 @@
+{
+  "game": "Baldi's Basics Field Trip Demo_1.1",
+  "files": [
+    {
+      "path": "Build/fieldtrip-staging.data.unityweb",
+      "size": 5556214,
+      "sha256": "f7b45fbca5458b79689529176ed255cba892c9cdcf831502367207d2b28fc575"
+    },
+    {
+      "path": "Build/fieldtrip-staging.json",
+      "size": 526,
+      "sha256": "ff0f467d767d45fa8957d9b60f391dd0676f9fe427f3543b94f03c9cdaca7f7e"
+    },
+    {
+      "path": "Build/fieldtrip-staging.wasm.code.unityweb",
+      "size": 4990146,
+      "sha256": "cbde219d9dd644363d5a9d824cb721bc9db62d9bca4120b6a7682ca1a838e064"
+    },
+    {
+      "path": "Build/fieldtrip-staging.wasm.framework.unityweb",
+      "size": 84441,
+      "sha256": "a76c0174a424ccf5633b6d02246f0fe9571c0556f42f87e235a56070b58a8a03"
+    },
+    {
+      "path": "Build/UnityLoader.js",
+      "size": 159436,
+      "sha256": "832dda725022a8f51703b96b182277e9cb7b5345bcd236d21f31007c6edb6fc1"
+    },
+    {
+      "path": "index.html",
+      "size": 4590,
+      "sha256": "e135f018252e317ec4af578ad704f24dad3e9ce865598f98dc9543d52516bcb5"
+    },
+    {
+      "path": "README.md",
+      "size": 2786,
+      "sha256": "be6e26d435d3482ca8787f033f2f5bc6ea5c5c1a88c9d8d68bb2a573c690e50e"
+    },
+    {
+      "path": "start.bat",
+      "size": 271,
+      "sha256": "adf8c9b28a64b4c61303c045abe4891ee7ab0383bec72a3f9bb6564bb2304cce"
+    },
+    {
+      "path": "start_server.py",
+      "size": 953,
+      "sha256": "ddfd549c97d171b37bd66a7d8fd49c01d97deb9f83439f536e1088e468dbec7e"
+    }
+  ],
+  "total_bytes": 10799363
+}

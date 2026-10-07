@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "path": "Build/Staging.data",
+      "size": 128736255,
+      "sha256": "0389752e8544dee8d8569448373929435187b733a1af9572c4749aa595acfc19"
+    },
+    {
+      "path": "Build/Staging.framework.js",
+      "size": 485393,
+      "sha256": "7dd0d668a19b6da4518a78a82b11ecd01090793f9f60b3c893a3e59cb5632be9"
+    },
+    {
+      "path": "Build/Staging.loader.js",
+      "size": 9744,
+      "sha256": "7f4f963dacb85dda385d56074fbf09aa2e2e17eee3c958fe342f7ae586cdb700"
+    },
+    {
+      "path": "Build/Staging.wasm",
+      "size": 21452798,
+      "sha256": "b91af66bd4032cb130a358aee1b29f4219994b4a503eaea7b0375ba2e4be7a74"
+    },
+    {
+      "path": "index.html",
+      "size": 3001,
+      "sha256": "e1c9c035d9d32f5f2b06da5e465838daeb7e44ef5583854a57880f17f5148979"
+    },
+    {
+      "path": "LICENSES.txt",
+      "size": 1091,
+      "sha256": "855825c368e58714d1b66ca4735525e58249e154c8178818be211463721bb855"
+    },
+    {
+      "path": "README.md",
+      "size": 4541,
+      "sha256": "3239364b2fba94f291f9312cdb3e0904ae3721bbd76ede606d0e5b287853b119"
+    },
+    {
+      "path": "StreamingAssets/buzz-death.mp4",
+      "size": 166833,
+      "sha256": "2c1106316307a5b63937851e63e69f6789596736182192f5566178495ac5050a"
+    }
+  ],
+  "total_bytes": 150859656
+}

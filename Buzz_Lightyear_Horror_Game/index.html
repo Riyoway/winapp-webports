@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buzz Lightyear Horror Game</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html,body { margin:0; width:100%; height:100%; overflow:hidden; background:#000; }
+    #unity-canvas { position:fixed; inset:0; width:100%; height:100%; display:block; background:#000; outline:none; }
+    #loading { position:fixed; inset:0; z-index:10; background:#000; }
+    #loading::before,#loading i { position:absolute; left:50%; top:50%; width:240px; height:3px; margin:-1px 0 0 -120px; background:#ffffff26; }
+    #loading::before { content:""; }
+    #loading i { width:0; background:#fff; transition:width .2s; }
+    #loading p { position:absolute; top:calc(50% + 16px); width:100%; margin:0; color:#888; font:13px monospace; text-align:center; }
+  </style>
+</head>
+<body>
+  <canvas id="unity-canvas" tabindex="-1"></canvas>
+  <div id="loading"><i></i></div>
+  <script>
+    const canvas = document.getElementById('unity-canvas');
+    const loading = document.getElementById('loading');
+    function showError(error) {
+      console.error(error);
+      const message = loading.querySelector('p') || document.createElement('p');
+      message.textContent = 'Error: ' + (error && error.message || error);
+      loading.appendChild(message); loading.style.display = '';
+    }
+    // Unity 2020 expects the original event-based pointer-lock API.
+    const requestPointerLock = Element.prototype.requestPointerLock;
+    if (requestPointerLock) Element.prototype.requestPointerLock = function(...args) {
+      const pending = requestPointerLock.apply(this, args);
+      if (pending && pending.catch) pending.catch(() => {});
+    };
+    document.addEventListener('game-quit', () => { canvas.style.display = 'none'; });
+    window.addEventListener('error', event => showError(event.message));
+    window.addEventListener('unhandledrejection', event => showError(event.reason));
+    const script = document.createElement('script');
+    script.src = 'Build/Staging.loader.js';
+    script.onerror = () => showError('Unity loader could not be loaded.');
+    script.onload = () => createUnityInstance(canvas, {
+      dataUrl: 'Build/Staging.data', frameworkUrl: 'Build/Staging.framework.js', codeUrl: 'Build/Staging.wasm',
+      streamingAssetsUrl: 'StreamingAssets', companyName: 'NA Games',
+      productName: 'Buzz Lightyear Horror Game', productVersion: '0.1',
+      autoSyncPersistentDataPath: true,
+      showBanner(message, type) { if(type === 'error') showError(message); },
+      cacheControl() { return 'no-store'; }
+    }, progress => { loading.querySelector('i').style.width = 240*Math.min(1,progress)+'px'; })
+      .then(instance => { window.unityInstance = instance; loading.style.display = 'none'; canvas.focus(); })
+      .catch(showError);
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>

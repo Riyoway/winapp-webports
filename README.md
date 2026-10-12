@@ -11,6 +11,7 @@ A collection of browser ports and restorations of Windows games, packaged with l
 | Baldi's Basics Gangnam Style Takeover | [Open game folder](./Baldis_Basics_Gangnam_Style_Takeover/) | Unity WebGL build based on Baldi's Basics Classic. |
 | Buzz Lightyear Horror Game | [Open game folder](./Buzz_Lightyear_Horror_Game/) | Browser restoration of the Windows release by NA Games, built with Unity 2020.1.0f1. |
 | DeathForest | [Open game folder](./DeathForest/) | Browser restoration of DeathForest: Escape from the Forest [Proliferation] v1.03 by Kazz. Requires WebGL 2. |
+| Friday Night Funkin': Indie Cross | [Open game folder](./fnf-indie-cross/) | Browser build of the Indie Cross mod, using OpenFL with local game assets. |
 | Mario.EXE | [Open game folder](./Mario.exe/) | Browser reconstruction of CoolRash's 2015 GameMaker game using recovered resources and game logic. |
 | Thirstiest Time of the Year | [Open game folder](./ThirstiestTimeOfTheYear/) | Unity WebGL reconstruction of the Windows build, including local audio and television video. Requires WebGL 2. |
 
@@ -33,6 +34,7 @@ Then open one of these addresses:
 - [Baldi's Basics Gangnam Style Takeover](http://localhost:8000/Baldis_Basics_Gangnam_Style_Takeover/)
 - [Buzz Lightyear Horror Game](http://localhost:8000/Buzz_Lightyear_Horror_Game/)
 - [DeathForest](http://localhost:8000/DeathForest/)
+- [Friday Night Funkin': Indie Cross](http://localhost:8000/fnf-indie-cross/)
 - [Mario.EXE](http://localhost:8000/Mario.exe/)
 - [Thirstiest Time of the Year](http://localhost:8000/ThirstiestTimeOfTheYear/)
 
@@ -47,6 +49,7 @@ All games, characters, artwork, music, sound effects, and other original content
 - **Mario.EXE:** the original fan game is by CoolRash. Mario characters and related Nintendo content belong to Nintendo and their respective rights holders.
 - **Buzz Lightyear Horror Game:** the game identifies its author as NA Games. Third-party characters and related content belong to their respective rights holders. The included Unity PostProcessing component's MIT license is preserved in [LICENSES.txt](./Buzz_Lightyear_Horror_Game/LICENSES.txt).
 - **Unity:** Unity and its associated trademarks belong to Unity Technologies. Unity runtime components are subject to their applicable terms.
+- **Friday Night Funkin': Indie Cross:** the original game, mod, music, artwork, and crossover characters belong to their respective creators and rights holders.
 - **Thirstiest Time of the Year:** the build identifies its creator as Vesselone (Norboo). Original content belongs to its respective rights holders. The Unity PostProcessing component's MIT license is preserved in [LICENSES.txt](./ThirstiestTimeOfTheYear/LICENSES.txt).
 
 This repository does not claim ownership of the original games or third-party content. Browser porting and restoration do not transfer those rights. Inclusion here does not grant permission to reuse or redistribute third-party content; obtain any required permission from the relevant rights holders.
